@@ -1,0 +1,29 @@
+The methods in this code construct a class called Permutation, which is used to produce all possible permutations of a given text using a recursive process. 
+The algorithm's primary function is the permute method, which creates permutations by repeatedly calling itself and switching characters. 
+
+This class efficiently carries out a recursive procedure to produce every possible combination of a supplied string.
+In our case, it is the default string "ABC". The permute technique is a divide-and-conquer strategy in which permutations for smaller substrings are generated iteratively and then combined to make the final permutations. A secondary function called the swap method makes it easier to swap characters within a string.
+
+
+The permute method is called using the sample string "ABC" in the main function to test the permutation generating.
+
+By making sure that each character is used only once in each location throughout the recursive process, this method prevents duplicate permutations from being generated, making it an efficient way to generate permutations of strings.
+
+FOR THE RUN.BAT FILE:
+-@echo off
+This line makes the output clearer by stopping the command prompt from showing the commands as they are performed.
+
+-javac Permutation.java TestPermutation.java
+The Permutation.java and TestPermutation.java files are both compiled by this command. Java source files are compiled into bytecode (.class files) using the javac command.
+
+-java Permutation 
+The Permutation class, which need to have a main method, is executed by this command. Java programs are run with the java command.
+
+-java TestPermutation
+The TestPermutation class, which need to have a main function as well, is executed by this command. This is an independent class that might be used to evaluate or show off the capabilities of the Permutation class.
+
+-pause
+This command waits for the user to hit any key before ending the command prompt window, pausing the batch script's execution. This is helpful for seeing the program's output prior to the window closing.
+
+
+It is assumed by this script that the batch script and Permutation.java and TestPermutation.java are in the same directory. You would need to modify the script if the classes are in other directories or packages. For example, you may use the -cp option with Java and Java to specify the classpath, as described in the sources that are given.
